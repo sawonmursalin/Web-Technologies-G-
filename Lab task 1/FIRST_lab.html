@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+<h6>-Denotes Required Information</h6>
+<h6> > 1 Donation > 2 Confirmation > Thank you!</h6>
+
+
+
+<h2 style="color:red;">Donor Information</h2>
+        <label for="fname">First Name<span class="note">*</span></label>
+        <input type="text" required name="fname" title="First Name" />
+        <br />
+        <label for="lname">Last Name<span class="note">*</span></label>
+        <input type="text" name="lname" title="Last Name" required />
+        <br />
+        <label for="company">Company<span class="note">*</span></label>
+        <input type="text" name="company" title="Company" required />
+        <br />
+        <label for="addr1">Address 1<span class="note">*</span></label>
+        <input type="text" name="addr1" title="Address 1" required />
+        <br />
+        <label for="addr2">Address 2</label>
+        <input type="text" name="addr2" title="Address 2" />
+        <br />
+        <label for="city">City<span class="note">*</span></label>
+        <input type="text" name="city" title="City" required />
+        <br />
+        <label for="state">State<span class="note">*</span></label>
+        <select name="states" id="states" title="States">
+          <option value="" disabled selected hidden>Select a state</option>
+          <option value="Satkhira">Satkhira</option>
+          <option value="dhaka">Dhaka</option>
+          <option value="Jossore">Jossore</option>
+          <option value="Foridpur">Foridpur</option>
+        
+
+        </select>
+        <br />
+        <label for="zipcode">Zip Code<span class="note">*</span></label>
+        <input type="text" name="zipcode" title="Zip Code" required />
+        <br>
+
+        <!-- Country Select options -->
+        <label for="countries">Country<span class="note">*</span></label>
+        <select name="countries" id="countries" title="Countries">
+          <option value="" disabled hidden selected>Select a country</option>
+          <option value="bangladesh">Bangladesh</option>
+          <option value="india">India</option>
+          <option value="italy">Brazil</option>
+          <option value="america">America</option>
+          <option value="america">Canada</option>
+          <option value="america">Japan</option>
+
+        </select>
+
+        <br />
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" title="Phone" required />
+
+        <br />
+        <label for="fax">Fax</label>
+        <input type="text" name="fax" title="Fax" required />
+
+        <br />
+        <label for="email">Email<span class="note">*</span></label>
+        <input type="email" name="email" title="Email" required />
+        <br />
+        <label for="donationAmount">Donation Amount<span class="note">*</span></label>
+        <input type="radio" name="none" id="none" />
+        <label for="none">None</label>
+        <input type="radio" name="50" id="50" />
+        <label for="50">$50</label>
+        <input type="radio" name="75" id="75" />
+        <label for="75">$75</label>
+        <input type="radio" name="100" id="100" />
+        <label for="100">$100</label>
+        <input type="radio" name="250" id="250" />
+        <label for="250">$250</label>
+        <input type="radio" name="other" id="other" />
+
+        <label for="other">$Other</label>
+        <br />
+        <label for="otherAmount">Other Amount $</label>
+        <input type="text" name="otherAmount" title="Other Amount" />
+
+        <br />
+        <label for="recDon">Recurring Donation</label>
+        <input type="checkbox" name="recDon" id="recDon" />
+        <label for="recDon">I am interested in giving on a regular basis.
+        </label>
+        <br />
+        <label for="creditCard">Monthly Credit Card $</label>
+        <input type="text" title="Credit Card" />
+        <label for="months">For</label>
+        <input type="text" name="months" id="months" />
+        <label for="months">Months</label>
+
+      </div>
+
+      <div class="hndMDonation">
+        <h1 style="color:red;">Honoraium and Memorial Donation Information</h1>
+
+        <label for="">I would like to make this donation</label>
+        <input type="radio" name="honor" id="honor" />
+        <label for="honor">To Honor</label>
+        <br />
+        <input type="radio" name="memory" id="memory" />
+        <label for="memory">In Memory of</label>
+
+        <br />
+        <label for="name2">Name</label>
+        <input type="text" name="name2" title="Name" required />
+
+        <br />
+        <label for="ack">Acknowledge Donation to</label>
+        <input type="text" name="ack" title="Acknowledge Donation to" required />
+
+        <br />
+        <label for="addr3">Address</label>
+        <input type="text" name="addr3" title="Address" required />
+        <br />
+
+        <label for="city2">City</label>
+        <input type="text" name="city2" title="City" required />
+        <br />
+        <label for="states2">State</label>
+        <select name="states2" id="states2" title="States">
+          <option value="" disabled selected hidden>Select a state</option>
+          <option value="Satkhira">Satkhira</option>
+          <option value="dhaka">Dhaka</option>
+          <option value="Jossore">Jossore</option>
+          <option value="Foridpur">Foridpur</option>
+        </select>
+        <br />
+        <label for="zipcode2">Zip Code</label>
+        <input type="text" name="zipcode2" title="Zip Code" required />
+
+
+        <h1 style="color:red;">Additional Information</h1>
+        <div class="additionInfo">
+          <p>Please enter your name, company or organization as you would like to appear in our publications: </p>
+          <label for="addiName">Name</label>
+          <input type="text" name="Name" id="addiName">
+          <br>
+          <!-- Terms -->
+          <input type="checkbox" name="" id="">
+          <label for="">I would like to gift to remain anonymous</label>
+          <br>
+          <input type="checkbox">
+          <label for="">My employer offers a matching gift program. I will mail the matching gift form</label>
+          <br>
+          <input type="checkbox">
+          <label for="">Please save the cost of acknowledging this gift by not mailing a thank you letter</label>
+          <br>
+          <label for="comment">Comments</label>
+          <br>
+          <textarea name="comments" id="comments" cols="80" rows="10"></textarea>
+          <br>
+          <label for="contact">How may we contact you?</label>
+          <br>
+          <input type="checkbox" name="email" id="email">
+          <label for="email">E-mail</label>
+          <br>
+          <input type="checkbox" name="postal" id="postal">
+          <label for="email">Postal Mail</label>
+          <br>
+          <input type="checkbox" name="telephone" id="telephone">
+          <label for="email">Telephone</label>
+          <br>
+          <input type="checkbox" name="fax" id="fax">
+          <label for="email">Fax</label>
+          <br>
+          <lebel>I would like to receive newsletters and information about special events by: </lebel>
+          <br>
+          <input type="checkbox" name="email" id="email">
+          <label for="email">E-mail</label>
+          <br>
+          <input type="checkbox" name="postal" id="postal">
+          <label for="email">Postal Mail</label>
+          <br>
+
+          <input type="checkbox" name="infolike" id="infoLike">
+          <label for="infoLike">I would like information about volunteering with the</label>
+
+          <!-- Submission -->
+          <br>
+          <input type="reset" value="reset">
+          <input type="submit" value="submit">
+        </div>
+    </form>
+  </section>
+  <br>
+  <section>
+    <div class="info">
+      <div class="info1">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///8jHyAAAAAgHB0GAAAnIiOzs7Pn5uYKAAC8u7vFxMQOBQjLysuenZ0VEBGrqqt8ensaFRb09PTV1NUTDQ87ODnv7+8uKiuHhoZLSEmXlpZaWFne3t5VUlMMAAUZFBZhX19samtvbm6Bf4BCP0CjoqI1MzNXVVZLSUleXV3Z2dmrI868AAAFCUlEQVR4nO2de5uiLBiH14fKyrQwO0zTuZlm6/t/wN3ed/YSnVTAAzDzu/+H67kFAZHDr18AAAAAAAAAAAAAAAAAAAAAAAAA+Ic/n3xl7psOqxHiyeaWUBHJcTOJTYdYh3jwGlHAmVcE4wElt4GrktvZgQ7Fdqkl8dnWdLAabI8UVet9SkZ0cs0xntFBUu9/DjRzqq4OgkTJ70FCI9Nhy3Mm2fopwujsSDH6i0DD70GwcKKLnAdcU9Dz+HBuOvxqxlo19B+MxqYFqpg8E2Q8SoI8SfRsKGC94vyrIO/1VrvZJsyzme1W1PtSo5ndFXXJcoIsoNuguPnwBzcK8knYssOIVXnLFck+CavCXYbBPuvIF53EqsVlmAn1QBupZJtedvwzXLccpzYTygRKO9nezd/lUk5ajVOfVaa2kUpJrDOK7NpajLXY9DKCU6XE04wihS3FWItlplFUHkaPREUW2NiersXRqGIJPsiUYmBhY7MUv3e1WsPLXijEnn2fGe9CT8HftLJYCL3p8L3h+OrTF4qQ9KYktkI9ZauG46vNXIhO+yUSX2WybXi6TqctWKL7Di2FqbnEtram30hs4nOybHTqC5WU9KciGsqmDQbpeIZ/1MjnNW1Oe4PGomuCWZS28+qdfco07XOiWWPRNcEuffa1apfQYfDfjUXXBGlDU7Mji4SMbBrWxOmjPxxr5XRMK4NVo2+hctXsx4T+wqrGVPi6D+p92oXpsMaqUc04NazZyAuNqVVzGYJhzT9IQsdq1dwwDOWBoSlgKA8MTQFDeWBoChjKA0NTwFAeGJoChvLA0BQ/ynA/9WuwfA+aelZNMjpfhR/A+8LdFTII/0hZfxdaMWUaejJ7DnRgfE8n4473Va0Vs5VEkmvjWmPQrt8DOpoUHLUv6HlDg4r3LgT/luLFmOFCf1W+mqKpPxghVQfXCKxvyNDrpI4+MNT5j7sqQs/jRyOGF/XdW9qQEcNrZ5XU1P/g7iqpqRexS0MzC6RgCEMYwtBSQ8Z5yRkLrhuyiKi/O35ciRJFSzcMg+Fs/Lmgcr7uq31aumDIe+vMasopj6oTuWSYLPK7TJbHXnUydwyDZ8vb1/I5WG8Y7Z7mIK9ou2Hhku2b7Ltou2HhTNJyL9miWm54OBXmEQ6rkztgSPfCPGLJAY7dhqxsv+VM7k2027B0f8JILhe7DUv/5frfwrBsnizOnxXipGHpT065OUnLDcv2Pcer72BYWkvl/pDbbdgrm839Fi1N6WbQgdwnlN2GpXsuj3I/We02LOsQfcnD6yw35C+Fecj+obPcsPgsl7t0a2W5YWGXKNcZumDIvKe7lj+kp9usN/T46mspxh/yZ2Tab+jxIB/jZKUwYeqAocfotzhbsz0pTXq7YPi3GMUm9ayW2g3DzJkgkrMXMIQhDGEIQxjCEIYwhCEMYfgDDcWDzs5q19A4Yni4pYkVF/o7YihMfocKK75cMmT8U3GqKOiMocfodToahS/KSZ0x9Dy+J9K4aschQ01gCEMYwhCGMIThTzA0cxrPS0cnKvxnaOQi1o3uVZXqMGZCMHPxSsuYuichf1Nee5Ss9m+Vzo6NiG7VwbTDqZtzI9jQ2GFR8aqTekoG72Pxhx0omr1Iz7+23WVwjUvqmuUif4W6BozeDDWjAvdTQAlnLXDY05sdVyItB5eXVb9xFqfQfPkBAAAAAAAAAAAAAAAAAAAAAAAAAAAA3OMPXIddF8y+rvwAAAAASUVORK5CYII=" alt="Lock Icon" width="32px" height="32px">Donate online with confidence. You are on a secure server.
+      </div>
+
+      <p>If you have any problems or questions, please contact <a
+          href="https://www.w3schools.com/html/html_basic.asp">support.</a></p>
+    </div>
+
+</body>
+</html>
